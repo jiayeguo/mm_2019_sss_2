@@ -26,5 +26,5 @@ def test_energy_calculator():
     energy_obj = mm_2019_sss_2.energy.Energy()
     assert(energy_obj.calculate_tail_correction(2, 10, 10) == -0.10417433972841154)
     test_coords = np.array([[0,0,0], [0,0,1.5]])
-    assert(energy_obj.calculate_initial_energy(test_coords, 10, 10) == 0.03059177374878155)
+    assert(energy_obj.calculate_initial_energy(test_coords, 10, 10) == -0.03059177374878155)
     assert(energy_obj.calculate_initial_energy(test_coords, 10, 1) == 0)
